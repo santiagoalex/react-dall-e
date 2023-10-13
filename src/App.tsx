@@ -1,5 +1,6 @@
 import { useState } from "react";
 import OpenAI from "openai";
+import TextArea from "./components/TextArea/TextArea";
 import "./App.css";
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <>
           <h2>Generate an Image using Open AI API</h2>
           <div className="general_container">
+            <TextArea placeholder={placeholder} setPrompt={setPrompt} />
             <textarea
               className="app-input"
               placeholder={placeholder}
