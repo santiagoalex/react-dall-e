@@ -43,13 +43,6 @@ function App() {
           <h2>Generate an Image using Open AI API</h2>
           <div className="general_container">
             <TextArea placeholder={placeholder} setPrompt={setPrompt} />
-            <textarea
-              className="app-input"
-              placeholder={placeholder}
-              onChange={(e) => setPrompt(e.target.value)}
-              rows={10}
-              cols={40}
-            />
             <button onClick={generateImage}>Generate an Image</button>
             {result && result.length > 0 ? (
               <img className="result-image" src={result} alt="result" />
